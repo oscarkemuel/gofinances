@@ -58,16 +58,6 @@ export const Icon = styled(Feather)`
   font-size: ${RFValue(24)}px;
 `;
 
-export const HighlightCards = styled.ScrollView.attrs(() => ({
-  horizontal: true,
-  showsHorizontalScrollIndicator: false,
-  contentContainerStyle: { paddingLeft: 24 },
-}))`
-  width: 100%;
-  position: absolute;
-  margin-top: ${RFPercentage(20)}px;
-`;
-
 export const Transactions = styled.View`
   flex: 1;
   padding: 0 ${RFValue(24)}px;
@@ -85,3 +75,13 @@ export const TransactionsList = styled(
   showsVerticalScrollIndicator: false,
   contentContainerStyle: { paddingBottom: getBottomSpace() + 16 },
 })``;
+
+export const HighlightCards = styled.ScrollView.attrs(() => ({
+  horizontal: true,
+  showsHorizontalScrollIndicator: false,
+  contentContainerStyle: { paddingLeft: 24 },
+}))`
+  width: 100%;
+  position: absolute;
+  margin-top: ${RFPercentage(20)}px;
+`;

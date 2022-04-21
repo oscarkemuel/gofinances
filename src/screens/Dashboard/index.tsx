@@ -1,4 +1,6 @@
 import React from 'react';
+import { Alert } from 'react-native';
+import { BorderlessButton } from 'react-native-gesture-handler';
 
 import { HighlightCard } from '../../components/HighlightCard';
 import { TransactionCard, TransactionCardProps } from '../../components/TransactionCard';
@@ -64,7 +66,9 @@ export function Dashboard() {
             </User>
           </UserInfo>
 
-          <Icon name="power" />
+          <BorderlessButton onPress={() => Alert.alert('dejese sair?')}>
+            <Icon name="power" />
+          </BorderlessButton>
         </UserWrapper>
       </Header>
 
