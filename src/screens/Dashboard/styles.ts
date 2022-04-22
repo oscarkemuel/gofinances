@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { FlatList, FlatListProps } from 'react-native';
+import { ActivityIndicator, FlatList, FlatListProps } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import { getBottomSpace, getStatusBarHeight } from 'react-native-iphone-x-helper';
@@ -84,4 +84,10 @@ export const HighlightCards = styled.ScrollView.attrs(() => ({
   width: 100%;
   position: absolute;
   margin-top: ${RFPercentage(20)}px;
+`;
+
+export const LoadContainer = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 `;
