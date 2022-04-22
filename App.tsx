@@ -3,6 +3,7 @@ import 'intl';
 import 'intl/locale-data/jsonp/pt-BR';
 
 import React from 'react';
+import { StatusBar } from 'react-native';
 import { ThemeProvider } from 'styled-components';
 import {
   useFonts,
@@ -27,6 +28,7 @@ export default function App() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ThemeProvider theme={theme}>
         <NavigationContainer>
+          <StatusBar backgroundColor={theme.colors.primary} translucent barStyle="light-content" />
           <AppRoutes />
         </NavigationContainer>
       </ThemeProvider>
