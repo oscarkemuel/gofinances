@@ -1,7 +1,6 @@
 {
   "expo": {
    "name": "gofinances",
-   "icon": "./src/assets/icon.png",
    "version": "1.0.0",
    "assetBundlePatterns": [
     "**/*"
@@ -14,6 +13,9 @@
    "android": {
      "package": "com.oscarkemuel.gofinances",
      "versionCode": 1
-   }
+   },
+   "splash": {
+    "backgroundColor": "#5636D3"
+  }
   }
 }
